@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/teleopView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/teleop_frame_bg" >
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/teleop_setv_bg"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="8dp" >
+
+            <ImageButton
+                android:id="@+id/setvadd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/teleop_add" />
+
+            <TextView
+                android:id="@+id/setvtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/setvsub"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/teleop_sub" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/veltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="20dp"
+            android:paddingTop="60dp"
+            android:text="mm/s"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/teleop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/teleop_button_bg"
+            android:src="@drawable/teleop_down" />
+
+        <ImageButton
+            android:id="@+id/teleop_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:background="@drawable/teleop_button_bg"
+            android:src="@drawable/teleop_up" />
+
+        <ImageButton
+            android:id="@+id/teleop_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/teleop_button_bg"
+            android:src="@drawable/teleop_left" />
+
+        <ImageButton
+            android:id="@+id/teleop_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/teleop_button_bg"
+            android:src="@drawable/teleop_right" />
+
+    </FrameLayout>
+
+</LinearLayout>
