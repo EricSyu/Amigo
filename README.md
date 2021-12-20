@@ -1,6 +1,6 @@
 # Amigo
 A android app of controling the AmigoBot.<br>
-The app must use with our server and the AmigoBot.<br>
+The app must work with [AmigoServer](https://github.com/EricSyu/AmigoServer) and the AmigoBot.<br>
 The app must run on the phone that is on the AmigoBot.<br>
 The app can send command package to control the AmigoBot via bluetooth.
 
